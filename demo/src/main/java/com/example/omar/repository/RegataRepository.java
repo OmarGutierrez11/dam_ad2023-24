@@ -1,0 +1,11 @@
+package com.example.omar.repository;
+
+import com.example.omar.model.Regata;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface RegataRepository extends
+        JpaRepository<Regata, Long> {
+
+}
