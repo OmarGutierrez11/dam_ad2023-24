@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row my-3" [ngStyle]="{ 'text-align': 'center' }">
+    <app-navbar-products></app-navbar-products>
+  </div>
+  <app-item-product
+    *ngFor="let miProducto of productos"
+    [product]="miProducto"
+    [routerLink]="['product', miProducto.idProduct]"
+    routerLinkActivated="active"
+  ></app-item-product>
+</div>

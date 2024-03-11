@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/home">{{title}}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"
+              (click)="toggleCollapse()"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup" [class.show]="show">
+      <div class="navbar-nav">
+        <a class="nav-link" aria-current="page"
+           routerLink="/home"
+           routerLinkActive="active">Home</a>
+        <a class="nav-link"
+           routerLink="/products"
+           routerLinkActive="active">Productos</a>
+        <a class="nav-link" routerLink="/contact"
+           routerLinkActive="active">Contacto</a>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <img class="col-2" [src]="product.imageUrl" [ngStyle]="{ height: '30%' }" />
+    <div class="col-8">
+      <div class="header">
+        <h3>{{ product.name }}</h3>
+      </div>
+      <div>SKU # {{ product.sku }}</div>
+      <div>
+        <span *ngFor="let name of product.department; let i = index">
+          <a href="#">{{ name }} </a>
+          <span>{{ i < product.department.length - 1 ? ">" : "" }}</span>
+        </span>
+      </div>
+    </div>
+    <div class="col-2">{{ product.price }} €</div>
+  </div>
+</div>

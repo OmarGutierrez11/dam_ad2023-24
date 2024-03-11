@@ -14,10 +14,8 @@ public class HibernateUtils {
             // Crea la SessionFactory a partir de hibernate.cfg.xml.
             Configuration configuration = new Configuration();
             configuration.configure("hibernate.cfg.xml");
-            return configuration.buildSessionFactory(
-                    new StandardServiceRegistryBuilder()
-                            .applySettings(configuration.getProperties())
-                            .build());
+            return configuration.buildSessionFactory();
+
         } catch (Exception e) {
             // En caso de error durante la creación, se lanza una excepción.
             throw new ExceptionInInitializerError(e);

@@ -13,5 +13,6 @@ public class Usuario {
     @JoinColumn(name = "cuenta_seguridad_social_id", referencedColumnName = "id")
     private CuentaSeguridadSocial cuentaSeguridadSocial;
 
+    private Direccion direccion;
 
 }

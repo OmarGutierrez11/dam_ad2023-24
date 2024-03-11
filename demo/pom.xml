@@ -3,7 +3,7 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.example.marina</groupId>
+	<groupId>com.example.omar</groupId>
 	<artifactId>omar-spring-boot</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -48,7 +48,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 
-					<mainClass>com.example.omar.OmarSpringBootApplication</mainClass>
+					<mainClass>com.example.omar.demo.DemoApplication</mainClass>
 				</configuration>
 			</plugin>
 

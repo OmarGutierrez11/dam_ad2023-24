@@ -10,4 +10,5 @@ public class AmarreController {
     @Autowired
     private AmarreService amarreService;
     // Otros métodos del controlador
+
 }

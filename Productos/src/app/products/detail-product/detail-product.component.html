@@ -1,0 +1,26 @@
+<div class="container">
+  <img class="col-12" [src]="productoElegido.imageUrl" />
+  <div class="col-12">
+    <div class="row text-center mt-3">
+      <h2>{{ productoElegido.name }}</h2>
+    </div>
+    <div class="row justify-content-center">
+      SKU # {{ productoElegido.sku }}
+    </div>
+    <div class="text-center">
+      <span *ngFor="let name of productoElegido.department; let i = index">
+        <a href="#">{{ name }} </a>
+        <span>{{ i < productoElegido.department.length - 1 ? ">" : "" }}</span>
+      </span>
+    </div>
+    <div class="row justify-content-center">{{ productoElegido.price }} €</div>
+    <div class="text-center">
+      <button
+        class="btn btn-primary"
+        (click)="deleteProduct(productoElegido.idProduct)"
+      >
+        Borrar
+      </button>
+    </div>
+  </div>
+</div>

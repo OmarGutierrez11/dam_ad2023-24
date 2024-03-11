@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PatrocinadoresMarketingDeportivo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PatrocinadoresMarketingDeportivo.xsd">
+   <campanas_publicitarias>
+      <campana_publicitaria>
+         <nombre_campana>Summer Sale</nombre_campana>
+         <descripcion>¡No te pierdas nuestras increíbles ofertas de verano!</descripcion>
+         <patrocinador>
+            <nombre_patrocinador>ABC Company</nombre_patrocinador>
+            <industria>Retail</industria>
+            <descripcion>Empresa líder en la venta de productos electrónicos</descripcion>
+         </patrocinador>
+         <fecha_inicio>2022-07-01</fecha_inicio>
+         <fecha_fin>2022-07-31</fecha_fin>
+         <presupuesto>5000</presupuesto>
+      </campana_publicitaria>
+      <campana_publicitaria>
+         <nombre_campana>Winter Collection</nombre_campana>
+         <descripcion>Descubre nuestra nueva colección de invierno</descripcion>
+         <patrocinador>
+            <nombre_patrocinador>XYZ Fashion</nombre_patrocinador>
+            <industria>Moda</industria>
+            <descripcion>Tienda de ropa de alta calidad</descripcion>
+         </patrocinador>
+         <fecha_inicio>2022-11-15</fecha_inicio>
+         <fecha_fin>2022-12-31</fecha_fin>
+         <presupuesto>8000</presupuesto>
+      </campana_publicitaria>
+      <campana_publicitaria>
+         <nombre_campana>Healthy Living</nombre_campana>
+         <descripcion>Mejora tu calidad de vida con nuestros productos saludables</descripcion>
+         <patrocinador>
+            <nombre_patrocinador>Wellness Corp</nombre_patrocinador>
+            <industria>Salud y bienestar</industria>
+            <descripcion>Especialistas en productos y servicios para una vida saludable</descripcion>
+         </patrocinador>
+         <fecha_inicio>2022-03-01</fecha_inicio>
+         <fecha_fin>2022-04-30</fecha_fin>
+         <presupuesto>3000</presupuesto>
+      </campana_publicitaria>
+   </campanas_publicitarias>
+   <patrocinadores>
+      <patrocinador>
+         <nombre_patrocinador>ABC Company</nombre_patrocinador>
+         <industria>Retail</industria>
+         <descripcion>Empresa líder en la venta de productos electrónicos</descripcion>
+      </patrocinador>
+      <patrocinador>
+         <nombre_patrocinador>XYZ Fashion</nombre_patrocinador>
+         <industria>Moda</industria>
+         <descripcion>Tienda de ropa de alta calidad</descripcion>
+      </patrocinador>
+      <patrocinador>
+         <nombre_patrocinador>Wellness Corp</nombre_patrocinador>
+         <industria>Salud y bienestar</industria>
+         <descripcion>Especialistas en productos y servicios para una vida saludable</descripcion>
+      </patrocinador>
+   </patrocinadores>
+   <entidades_deportivas>
+      <entidad_deportiva>
+         <nombre_entidad>Club Deportivo XYZ</nombre_entidad>
+         <tipo_entidad>Club deportivo</tipo_entidad>
+         <campanas_publicitarias>
+            <nombre_campana>Summer Sale</nombre_campana>
+            <nombre_campana>Winter Collection</nombre_campana>
+            <nombre_campana>Healthy Living</nombre_campana>
+         </campanas_publicitarias>
+      </entidad_deportiva>
+      <entidad_deportiva>
+         <nombre_entidad>Asociación Deportiva ABC</nombre_entidad>
+         <tipo_entidad>Asociación deportiva</tipo_entidad>
+         <campanas_publicitarias>
+            <nombre_campana>Summer Sale</nombre_campana>
+            <nombre_campana>Winter Collection</nombre_campana>
+            <nombre_campana>Healthy Living</nombre_campana>
+         </campanas_publicitarias>
+      </entidad_deportiva>
+      <entidad_deportiva>
+         <nombre_entidad>Club Deportivo 123</nombre_entidad>
+         <tipo_entidad>Club deportivo</tipo_entidad>
+         <campanas_publicitarias>
+            <nombre_campana>Summer Sale</nombre_campana>
+            <nombre_campana>Winter Collection</nombre_campana>
+            <nombre_campana>Healthy Living</nombre_campana>
+         </campanas_publicitarias>
+      </entidad_deportiva>
+   </entidades_deportivas>
+   <medios_comunicacion>
+      <medio_comunicacion>
+         <nombre_medio>Diario ABC</nombre_medio>
+         <tipo_medio>Prensa escrita</tipo_medio>
+         <campana_publicitaria>
+            <nombre_campana>Summer Sale</nombre_campana>
+            <descripcion>¡No te pierdas nuestras increíbles ofertas de verano!</descripcion>
+            <patrocinador>
+               <nombre_patrocinador>ABC Company</nombre_patrocinador>
+               <industria>Retail</industria>
+               <descripcion>Empresa líder en la venta de productos electrónicos</descripcion>
+            </patrocinador>
+            <fecha_inicio>2022-07-01</fecha_inicio>
+            <fecha_fin>2022-07-31</fecha_fin>
+         </campana_publicitaria>
+      </medio_comunicacion>
+      <medio_comunicacion>
+         <nombre_medio>Revista Fashion Trends</nombre_medio>
+         <tipo_medio>Revista de moda</tipo_medio>
+         <campana_publicitaria>
+            <nombre_campana>Winter Collection</nombre_campana>
+            <descripcion>Descubre nuestra nueva colección de invierno</descripcion>
+            <patrocinador>
+               <nombre_patrocinador>XYZ Fashion</nombre_patrocinador>
+               <industria>Moda</industria>
+               <descripcion>Tienda de ropa de alta calidad</descripcion>
+            </patrocinador>
+            <fecha_inicio>2022-11-15</fecha_inicio>
+            <fecha_fin>2022-12-31</fecha_fin>
+         </campana_publicitaria>
+      </medio_comunicacion>
+      <medio_comunicacion>
+         <nombre_medio>Canal Wellness TV</nombre_medio>
+         <tipo_medio>Medio de comunicación televisivo</tipo_medio>
+         <campana_publicitaria>
+            <nombre_campana>Healthy Living</nombre_campana>
+            <descripcion>Mejora tu calidad de vida con nuestros productos saludables</descripcion>
+            <patrocinador>
+               <nombre_patrocinador>Wellness Corp</nombre_patrocinador>
+               <industria>Salud y bienestar</industria>
+               <descripcion>Especialistas en productos y servicios para una vida saludable</descripcion>
+            </patrocinador>
+            <fecha_inicio>2022-03-01</fecha_inicio>
+            <fecha_fin>2022-04-30</fecha_fin>
+         </campana_publicitaria>
+      </medio_comunicacion>
+   </medios_comunicacion>
+</PatrocinadoresMarketingDeportivo>

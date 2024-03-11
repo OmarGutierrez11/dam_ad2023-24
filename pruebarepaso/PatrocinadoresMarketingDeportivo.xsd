@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- editado con XMLSpy v2024 (x64) (http://www.altova.com/es) por Jose (IES Juan Jose Calvo Miguel) -->
+<!-- edited with XMLSpy v2023 (x64) (http://www.altova.com) by  (IES Juan Jose Calvo Miguel) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="PatrocinadoresMarketingDeportivo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="campanas_publicitarias">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="campana_publicitaria" type="CampanaPublicitariaType"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="patrocinadores">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="patrocinador" type="PatrocinadorType"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="entidades_deportivas">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="entidad_deportiva" type="EntidadDeportivaType"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="medios_comunicacion">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="medio_comunicacion" type="MedioComunicacionType"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="EntidadDeportivaType">
+		<xs:sequence>
+			<xs:element name="nombre_entidad" type="xs:string"/>
+			<xs:element name="tipo_entidad" type="xs:string"/>
+			<xs:element name="campanas_publicitarias">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="nombre_campana"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PatrocinadorType">
+		<xs:sequence>
+			<xs:element name="nombre_patrocinador" type="xs:string"/>
+			<xs:element name="industria" type="xs:string"/>
+			<xs:element name="descripcion" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MedioComunicacionType">
+		<xs:sequence>
+			<xs:element name="nombre_medio" type="xs:string"/>
+			<xs:element name="tipo_medio" type="xs:string"/>
+			<xs:element name="campana_publicitaria" type="CampanaPublicitariaType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CampanaPublicitariaType">
+		<xs:sequence>
+			<xs:element name="nombre_campana" type="xs:string"/>
+			<xs:element name="descripcion" type="xs:string"/>
+			<xs:element name="patrocinador" type="PatrocinadorType"/>
+			<xs:element name="fecha_inicio" type="xs:string"/>
+			<xs:element name="fecha_fin" type="xs:string"/>
+			<xs:element name="presupuesto" type="xs:float"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

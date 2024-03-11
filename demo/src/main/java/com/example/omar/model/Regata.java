@@ -26,3 +26,6 @@ public class Regata implements Serializable {
     private Set<Barco> barcos = new HashSet<>();
 
 }
+
+
+

@@ -1,0 +1,73 @@
+<div class="container mt-2">
+  <form>
+    <div class="mb-3 row">
+      <label for="imagen" class="col-sm-2 col-form-label">Imagen</label>
+      <div class="col">
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="producto.imageUrl"
+          id="imagen"
+          name="imagen"
+        />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="nombre" class="col-sm-3 col-form-label"
+      >Nombre producto</label
+      >
+      <div class="col">
+        <input
+          type="text"
+          class="form-control"
+          id="nombre"
+          [(ngModel)]="producto.name"
+          name="nombre"
+        />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="sku" class="col-sm-3 col-form-label">SKU producto</label>
+      <div class="col">
+        <input
+          type="text"
+          class="form-control"
+          id="sku"
+          [(ngModel)]="producto.sku"
+          name="sku"
+          placeholder="SKU#123"
+        />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="departamento" class="col-sm-5 col-form-label"
+      >Departamento y subdepartamentos</label
+      >
+      <div class="col">
+        <input
+          type="text"
+          class="form-control"
+          id="departamento"
+          [(ngModel)]="producto.department"
+          placeholder="Ej: Woman, Accesorios, Pañuelos"
+          name="departamento"
+        />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="precio" class="col-sm-2 col-form-label">Precio (€)</label>
+      <div class="col">
+        <input
+          type="number"
+          class="form-control"
+          id="precio"
+          [(ngModel)]="producto.price"
+          name="precio"
+        />
+      </div>
+    </div>
+  </form>
+  <div class="row">
+    <button type="submit" class="col-2 mx-auto btn btn-primary" (click)="addProduct()">Añadir</button>
+  </div>
+</div>

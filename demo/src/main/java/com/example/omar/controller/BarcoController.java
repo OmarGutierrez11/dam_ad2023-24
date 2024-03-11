@@ -41,9 +41,10 @@ public class BarcoController {
     }
     // Eliminar un barco por ID
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteBarco(@PathVariable Long
-                                                    id) {
+    public ResponseEntity<Void> deleteBarco(@PathVariable Long id) {
         barcoService.deleteBarco(id);
         return ResponseEntity.ok().build();
     }
+
+
 }
